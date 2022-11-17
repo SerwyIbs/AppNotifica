@@ -86,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C116C22926631C00EBECD1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				21C6BF10291A8963002025CE /* Coordinator */,
+				21C6BF1A291A8D0A002025CE /* Controller */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		21C6BF0F291A8708002025CE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +150,7 @@
 		41239E8928F840EA00D92C31 /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
-				21C6BF1A291A8D0A002025CE /* Controller */,
-				21C6BF10291A8963002025CE /* Coordinator */,
+				21C116C22926631C00EBECD1 /* Source */,
 				21C6BF0F291A8708002025CE /* Resource */,
 				41239E9B28F840ED00D92C31 /* Info.plist */,
 			);
