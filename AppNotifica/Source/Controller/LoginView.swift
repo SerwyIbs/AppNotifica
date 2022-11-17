@@ -11,7 +11,7 @@ import UIKit
 class LoginView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .lightGray
+        self.backgroundColor = .viewBackGroundColor
         setupVisualElements()
     }
     //criar as funcoes com as propriedades da imagem do login
@@ -27,7 +27,7 @@ class LoginView : UIView {
     //criar as funcoes com as propriedades da label de login
     var imageLabel: UILabel = {
         let label = UILabel ()
-        label.textColor = UIColor (red: 0.541, green: 0.541, blue: 0.557, alpha: 1)
+        label.textColor = .textLabelColor
         label.font =  UIFont(name: "SFProDisplay-Light", size: 16)
         label.text = "Registre e gerencie as ocorrências do seu IF"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -39,7 +39,7 @@ class LoginView : UIView {
         let textfField = UITextField ()
         textfField.font = UIFont(name: "SFProText-Regular", size: 17)
         textfField.placeholder = "E-mail"
-        textfField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        textfField.backgroundColor = .textFieldBackGroundColor
         textfField.translatesAutoresizingMaskIntoConstraints = false
     return textfField
     }()
@@ -49,39 +49,43 @@ class LoginView : UIView {
         let textfFieldS = UITextField ()
         textfFieldS.font =  UIFont(name: "SFProText-Regular", size: 17)
         textfFieldS.placeholder = "Senha"
-        textfFieldS.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        textfFieldS.backgroundColor = .textFieldBackGroundColor
         textfFieldS.translatesAutoresizingMaskIntoConstraints = false
     return textfFieldS
     }()
     
     
-   /* //criar as funcoes com as propriedades do butao logar
+    //cria a função com as propriadades da butao no logor
     var buttonLogar: UIButton = {
         let button = UIButton ()
-        button.setTitle ("LOGAR", for: .normal)
-        button.layer.backgroundColor = UIColor (red: 0.369, green: 0.639, bleu: 0.639, alpha: 1).cgColor
+        button.setTitle("LOGAR", for: .normal)
+        button.backgroundColor = .buttonBackGroundColor
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
+        
         return button
     }()
     
-    //criar as funcoes com as propriedades do butao registrar
+    //cria a função com as propriadades do botão registrar
     var buttonRegistrar: UIButton = {
         let button = UIButton ()
-        button.setTitle ("REGISTRAR", for: .normal)
-        button.layer.backgroundColor = UIColor (red: 0.369, green: 0.639, bleu: 0.639, alpha: 1).cgColor
+        button.setTitle("REGISTRAR", for: .normal)
+        button.backgroundColor = .buttonBackGroundColor
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
+        
         return button
-    }()*/
+    }()
+    
+    
     
     func setupVisualElements(){
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(emailTexField)
         self.addSubview(senhaTextfield)
-       /* self.addSubview(buttonRegistrar)
-        self.addSubview(buttonLogar)*/
+        self.addSubview(buttonLogar)
+        self.addSubview(buttonRegistrar)
         
         NSLayoutConstraint.activate([
             imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
@@ -111,13 +115,23 @@ class LoginView : UIView {
             senhaTextfield.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
             senhaTextfield.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
         ])
- 
-      /*  NSLayoutConstraint.activate([
-       senhaTextfield.widthAnchor.constraint(equalToConstant: 374),
-       senhaTextfield.topAnchor.constraint(equalTo: imageLogin.bottomAnchor,constant: 180),
-       senhaTextfield.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
-       senhaTextfield.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
-   ])*/
+        
+        NSLayoutConstraint.activate([
+        buttonLogar.widthAnchor.constraint(equalToConstant: 374),
+        buttonLogar.heightAnchor.constraint(equalToConstant: 60),
+        buttonLogar.topAnchor.constraint(equalTo: senhaTextfield.bottomAnchor, constant: 25),
+        buttonLogar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+        buttonLogar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+        ])
+        
+        NSLayoutConstraint.activate([
+        buttonRegistrar.widthAnchor.constraint(equalToConstant: 374),
+        buttonRegistrar.heightAnchor.constraint(equalToConstant: 60),
+        buttonRegistrar.topAnchor.constraint(equalTo: buttonLogar.bottomAnchor, constant: 25),
+        buttonRegistrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+        buttonRegistrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+        ])
+
     }
  
     required init?(coder: NSCoder) {
