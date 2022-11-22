@@ -27,4 +27,5 @@ extension UIColor {
     static var placeHolderColor: UIColor {
         UIColor(named: "placeHolderColor") ?? .white
     }
+    
 }

@@ -15,79 +15,23 @@ class RegisterView : UIView {
         setupVisualElements()
     }
 
-    
-    //criar as funcoes com as propriedades da label de login
-    var imageLabel: UILabel = {
-        let label = UILabel ()
-        label.textColor = .textLabelColor
-        label.font =  UIFont(name: "SFProDisplay-Light", size: 16)
-        label.text = "Entre com sei e-mail e sua senha para se registrar"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    //criar as funcoes com as propriedades da label da e-mail
-    var emailTexField: UITextField = {
-        let textfField = UITextField ()
-        textfField.font = UIFont(name: "SFProText-Regular", size: 17)
-        textfField.placeholder = "E-mail"
-        textfField.backgroundColor = .textFieldBackGroundColor
-        textfField.translatesAutoresizingMaskIntoConstraints = false
-    return textfField
-    }()
-    
-    //criar as funcoes com as propriedades da label da senha
-    var senhaTextfield: UITextField = {
-        let textfFieldS = UITextField ()
-        textfFieldS.font =  UIFont(name: "SFProText-Regular", size: 17)
-        textfFieldS.placeholder = "Senha"
-        textfFieldS.backgroundColor = .textFieldBackGroundColor
-        textfFieldS.translatesAutoresizingMaskIntoConstraints = false
-    return textfFieldS
-    }()
-    
-    //criar as funcoes com as propriedades da label da senha
-    var confirmesenhaTextfield: UITextField = {
-        let textfFieldS = UITextField ()
-        textfFieldS.font =  UIFont(name: "SFProText-Regular", size: 17)
-        textfFieldS.placeholder = "Confirme sua senha"
-        textfFieldS.backgroundColor = .textFieldBackGroundColor
-        textfFieldS.translatesAutoresizingMaskIntoConstraints = false
-    return textfFieldS
-    }()
-    
-    //cria a função com as propriadades da butao no logor
-    var buttonLogar: UIButton = {
-        let button = UIButton ()
-        button.setTitle("LOGAR", for: .normal)
-        button.backgroundColor = .buttonBackGroundColor
-        button.layer.cornerRadius = 14
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    //cria a função com as propriadades do botão registrar
-    var buttonRegistrar: UIButton = {
-        let button = UIButton ()
-        button.setTitle("REGISTRAR", for: .normal)
-        button.backgroundColor = .buttonBackGroundColor
-        button.layer.cornerRadius = 14
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    
+ //cria a função com as propriadades
+ var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
+ var emailTextField = TextFieldDefault (placeholder: "E-mail")
+ var senhaTextField = TextFieldDefault (placeholder: "Senha")
+ var confirmaSenhaTextField = TextFieldDefault (placeholder: "Confirme sua senha")
+ var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
+ var buttonLogar = ButtonDefault(botao: "LOGAR")
+     
     
     func setupVisualElements(){
         
         self.addSubview(imageLabel)
-        self.addSubview(emailTexField)
-        self.addSubview(senhaTextfield)
+        self.addSubview(emailTextField)
+        self.addSubview(senhaTextField)
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
-        self.addSubview(confirmesenhaTextfield)
+        self.addSubview(confirmaSenhaTextField)
         
     
         
@@ -99,31 +43,34 @@ class RegisterView : UIView {
         ])
         
         NSLayoutConstraint.activate([
-            emailTexField.widthAnchor.constraint(equalToConstant: 374),
-            emailTexField.topAnchor.constraint(equalTo: imageLabel.bottomAnchor,constant: 60),
-            emailTexField.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
-            emailTexField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
+            emailTextField.widthAnchor.constraint(equalToConstant: 374),
+            emailTextField.heightAnchor.constraint(equalToConstant: 60),
+            emailTextField.topAnchor.constraint(equalTo: imageLabel.bottomAnchor,constant: 70),
+            emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 16),
+            emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -16),
         ])
         
         NSLayoutConstraint.activate([
-            senhaTextfield.widthAnchor.constraint(equalToConstant: 374),
-            senhaTextfield.topAnchor.constraint(equalTo: emailTexField.bottomAnchor,constant: 180),
-            senhaTextfield.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
-            senhaTextfield.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
+            senhaTextField.widthAnchor.constraint(equalToConstant: 374),
+            senhaTextField.heightAnchor.constraint(equalToConstant: 60),
+            senhaTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor,constant: 23),
+            senhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 16),
+            senhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -16),
         ])
         
         NSLayoutConstraint.activate([
-            confirmesenhaTextfield.widthAnchor.constraint(equalToConstant: 374),
-            confirmesenhaTextfield.topAnchor.constraint(equalTo: senhaTextfield.bottomAnchor,constant: 180),
-            confirmesenhaTextfield.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
-            confirmesenhaTextfield.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
+            confirmaSenhaTextField.widthAnchor.constraint(equalToConstant: 374),
+            confirmaSenhaTextField.heightAnchor.constraint(equalToConstant: 60),
+            confirmaSenhaTextField.topAnchor.constraint(equalTo: senhaTextField.bottomAnchor,constant: 23),
+            confirmaSenhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 16),
+            confirmaSenhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -16),
         ])
     
         
         NSLayoutConstraint.activate([
         buttonRegistrar.widthAnchor.constraint(equalToConstant: 374),
         buttonRegistrar.heightAnchor.constraint(equalToConstant: 60),
-        buttonRegistrar.topAnchor.constraint(equalTo: confirmesenhaTextfield.bottomAnchor, constant: 25),
+        buttonRegistrar.topAnchor.constraint(equalTo: confirmaSenhaTextField.bottomAnchor, constant: 25),
         buttonRegistrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
         buttonRegistrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
         ])

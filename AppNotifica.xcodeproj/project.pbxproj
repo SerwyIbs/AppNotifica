@@ -25,6 +25,10 @@
 		57DC3DB7292CFE0F00D23B39 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DB6292CFE0F00D23B39 /* RegisterView.swift */; };
 		57DC3DB9292CFE3100D23B39 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DB8292CFE3100D23B39 /* RegisterViewController.swift */; };
 		57DC3DBB292CFEC000D23B39 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DBA292CFEC000D23B39 /* RegisterCoordinator.swift */; };
+		57DC3DBE292D0CD900D23B39 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DBD292D0CD900D23B39 /* ImageDefault.swift */; };
+		57DC3DC0292D0D6200D23B39 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DBF292D0D6200D23B39 /* TextFieldDefault.swift */; };
+		57DC3DC2292D0D7F00D23B39 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DC1292D0D7F00D23B39 /* ButtonDefault.swift */; };
+		57DC3DC4292D0D9400D23B39 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DC3292D0D9400D23B39 /* LabelDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		57DC3DB6292CFE0F00D23B39 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		57DC3DB8292CFE3100D23B39 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		57DC3DBA292CFEC000D23B39 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		57DC3DBD292D0CD900D23B39 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
+		57DC3DBF292D0D6200D23B39 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		57DC3DC1292D0D7F00D23B39 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		57DC3DC3292D0D9400D23B39 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		21CA4CA029266AC20025853F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				57DC3DBC292D0C4B00D23B39 /* Infrastructure */,
 				21ED10C429267A6A00A875E1 /* Extensions */,
 				21C6BF10291A8963002025CE /* Coordinator */,
 				21C6BF1A291A8D0A002025CE /* Controller */,
@@ -208,6 +217,17 @@
 				57DC3DB8292CFE3100D23B39 /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		57DC3DBC292D0C4B00D23B39 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				57DC3DBD292D0CD900D23B39 /* ImageDefault.swift */,
+				57DC3DBF292D0D6200D23B39 /* TextFieldDefault.swift */,
+				57DC3DC1292D0D7F00D23B39 /* ButtonDefault.swift */,
+				57DC3DC3292D0D9400D23B39 /* LabelDefault.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,14 +363,18 @@
 			files = (
 				21C6BF19291A8CF1002025CE /* LoginCoordinator.swift in Sources */,
 				57DC3DB9292CFE3100D23B39 /* RegisterViewController.swift in Sources */,
+				57DC3DC4292D0D9400D23B39 /* LabelDefault.swift in Sources */,
 				57DC3DB7292CFE0F00D23B39 /* RegisterView.swift in Sources */,
 				21C6BF1C291A8D59002025CE /* LoginView.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				57DC3DBB292CFEC000D23B39 /* RegisterCoordinator.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
+				57DC3DC2292D0D7F00D23B39 /* ButtonDefault.swift in Sources */,
 				21C6BF1E291A8D79002025CE /* LoginViewController.swift in Sources */,
 				21C6BF16291A8A60002025CE /* Coordinator.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
+				57DC3DBE292D0CD900D23B39 /* ImageDefault.swift in Sources */,
+				57DC3DC0292D0D6200D23B39 /* TextFieldDefault.swift in Sources */,
 				21ED10C629267AD300A875E1 /* UIcolor+.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
 			);
