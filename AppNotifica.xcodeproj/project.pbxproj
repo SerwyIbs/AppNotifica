@@ -22,6 +22,9 @@
 		41239EA528F840EE00D92C31 /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EA428F840EE00D92C31 /* AppNotificaTests.swift */; };
 		41239EAF28F840EE00D92C31 /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */; };
 		41239EB128F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */; };
+		57DC3DB7292CFE0F00D23B39 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DB6292CFE0F00D23B39 /* RegisterView.swift */; };
+		57DC3DB9292CFE3100D23B39 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DB8292CFE3100D23B39 /* RegisterViewController.swift */; };
+		57DC3DBB292CFEC000D23B39 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC3DBA292CFEC000D23B39 /* RegisterCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		41239EAA28F840EE00D92C31 /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57DC3DB6292CFE0F00D23B39 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		57DC3DB8292CFE3100D23B39 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		57DC3DBA292CFEC000D23B39 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2130A4C3292CF2D20053FA90 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		21C6BF0F291A8708002025CE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +113,7 @@
 			children = (
 				21C6BF15291A8A60002025CE /* Coordinator.swift */,
 				21C6BF18291A8CF1002025CE /* LoginCoordinator.swift */,
+				57DC3DBA292CFEC000D23B39 /* RegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -121,9 +121,8 @@
 		21C6BF1A291A8D0A002025CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2130A4C3292CF2D20053FA90 /* New Group */,
-				21C6BF1B291A8D59002025CE /* LoginView.swift */,
-				21C6BF1D291A8D79002025CE /* LoginViewController.swift */,
+				57DC3DB5292CFDD500D23B39 /* Register */,
+				57DC3DB4292CFD7700D23B39 /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +190,24 @@
 				41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */,
 			);
 			path = AppNotificaUITests;
+			sourceTree = "<group>";
+		};
+		57DC3DB4292CFD7700D23B39 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				21C6BF1B291A8D59002025CE /* LoginView.swift */,
+				21C6BF1D291A8D79002025CE /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		57DC3DB5292CFDD500D23B39 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				57DC3DB6292CFE0F00D23B39 /* RegisterView.swift */,
+				57DC3DB8292CFE3100D23B39 /* RegisterViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,8 +342,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C6BF19291A8CF1002025CE /* LoginCoordinator.swift in Sources */,
+				57DC3DB9292CFE3100D23B39 /* RegisterViewController.swift in Sources */,
+				57DC3DB7292CFE0F00D23B39 /* RegisterView.swift in Sources */,
 				21C6BF1C291A8D59002025CE /* LoginView.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
+				57DC3DBB292CFEC000D23B39 /* RegisterCoordinator.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
 				21C6BF1E291A8D79002025CE /* LoginViewController.swift in Sources */,
 				21C6BF16291A8A60002025CE /* Coordinator.swift in Sources */,
