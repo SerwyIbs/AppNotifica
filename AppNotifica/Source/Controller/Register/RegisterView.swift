@@ -19,7 +19,7 @@ class RegisterView : UIView {
  var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
  var emailTextField = TextFieldDefault (placeholder: "E-mail")
  var senhaTextField = TextFieldDefault (placeholder: "Senha")
- var confirmaSenhaTextField = TextFieldDefault (placeholder: "Confirme sua senha")
+ var confirmeSenhaTextField = TextFieldDefault (placeholder: "Confirme sua senha")
  var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
  var buttonLogar = ButtonDefault(botao: "LOGAR")
      
@@ -31,7 +31,7 @@ class RegisterView : UIView {
         self.addSubview(senhaTextField)
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
-        self.addSubview(confirmaSenhaTextField)
+        self.addSubview(confirmeSenhaTextField)
         
     
         
@@ -59,18 +59,18 @@ class RegisterView : UIView {
         ])
         
         NSLayoutConstraint.activate([
-            confirmaSenhaTextField.widthAnchor.constraint(equalToConstant: 374),
-            confirmaSenhaTextField.heightAnchor.constraint(equalToConstant: 60),
-            confirmaSenhaTextField.topAnchor.constraint(equalTo: senhaTextField.bottomAnchor,constant: 23),
-            confirmaSenhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 16),
-            confirmaSenhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -16),
+            confirmeSenhaTextField.widthAnchor.constraint(equalToConstant: 374),
+            confirmeSenhaTextField.heightAnchor.constraint(equalToConstant: 60),
+            confirmeSenhaTextField.topAnchor.constraint(equalTo: senhaTextField.bottomAnchor,constant: 23),
+            confirmeSenhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 16),
+            confirmeSenhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -16),
         ])
     
         
         NSLayoutConstraint.activate([
         buttonRegistrar.widthAnchor.constraint(equalToConstant: 374),
         buttonRegistrar.heightAnchor.constraint(equalToConstant: 60),
-        buttonRegistrar.topAnchor.constraint(equalTo: confirmaSenhaTextField.bottomAnchor, constant: 25),
+        buttonRegistrar.topAnchor.constraint(equalTo: confirmeSenhaTextField.bottomAnchor, constant: 25),
         buttonRegistrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
         buttonRegistrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
         ])
