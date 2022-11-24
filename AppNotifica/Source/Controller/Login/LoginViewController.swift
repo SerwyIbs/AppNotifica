@@ -8,10 +8,18 @@
 import Foundation
 import UIKit
 class LoginViewController : UIViewController {
-    var viewMain = LoginView()
-    override func loadView() {
-            self.view = viewMain
+    
+    var onRegisterTap: (() -> Void)?
+    lazy var loginView: LoginView = {
+        let loginView = LoginView()
+        loginView.onRegisterTap = {
+            self.onRegisterTap?()
         }
+        return loginView
+    }()
+       override func loadView(){
+           self.view = loginView
+       }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Logar"
