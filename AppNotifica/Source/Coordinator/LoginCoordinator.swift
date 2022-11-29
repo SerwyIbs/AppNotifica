@@ -27,7 +27,7 @@ func  gotoRegister() {
   coordinator.start()
 }
     func  gotoLogin() {
-     let coordinator = HomeCoordinator(navigationController: navigationController)
+     let coordinator = TabBarCoordinator(navigationController: navigationController)
       coordinator.start()
     }
 }
