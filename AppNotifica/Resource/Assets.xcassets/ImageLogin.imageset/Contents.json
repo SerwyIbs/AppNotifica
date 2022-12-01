@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "Group 37.png",
+      "filename" : "logo-launch-screen.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Group 37.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
