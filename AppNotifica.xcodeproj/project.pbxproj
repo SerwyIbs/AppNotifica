@@ -22,6 +22,7 @@
 		41239EA528F840EE00D92C31 /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EA428F840EE00D92C31 /* AppNotificaTests.swift */; };
 		41239EAF28F840EE00D92C31 /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */; };
 		41239EB128F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */; };
+		579157FE293F72970006A535 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579157FD293F72970006A535 /* EscolherImagem.swift */; };
 		579C0840292F9FFE006EDD62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C083F292F9FFE006EDD62 /* HomeViewController.swift */; };
 		579C0842292FA01B006EDD62 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C0841292FA01B006EDD62 /* HomeView.swift */; };
 		579C0844292FA03D006EDD62 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C0843292FA03D006EDD62 /* HomeCoordinator.swift */; };
@@ -81,6 +82,7 @@
 		41239EAA28F840EE00D92C31 /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239EAE28F840EE00D92C31 /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		41239EB028F840EE00D92C31 /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		579157FD293F72970006A535 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 		579C083F292F9FFE006EDD62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		579C0841292FA01B006EDD62 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		579C0843292FA03D006EDD62 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			children = (
 				57B0060E293643C100AA9B3C /* NovaOcorrenciaView.swift */,
 				57B00610293643D300AA9B3C /* NovaOcorrenciaViewController.swift */,
+				579157FD293F72970006A535 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				57B0060B2936439D00AA9B3C /* SobreView.swift in Sources */,
 				57B006092936437600AA9B3C /* TabBarController.swift in Sources */,
 				57B006172936447500AA9B3C /* TabBarCoordinator.swift in Sources */,
+				579157FE293F72970006A535 /* EscolherImagem.swift in Sources */,
 				57FC0E20292FB78B00631F95 /* ViewControllerDefault.swift in Sources */,
 				57DC3DC4292D0D9400D23B39 /* LabelDefault.swift in Sources */,
 				57B0060D293643B300AA9B3C /* SobreViewController.swift in Sources */,
