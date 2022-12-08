@@ -11,7 +11,7 @@ import UIKit
 class NovaOcorrenciaView: ViewDefault{
     
     var onCameraTap: (()->Void)?
-    
+    var onStatusTap: (()->Void)?
     lazy var imagem: UIImageView = {
         let view = UIImageView ()
         view.image = UIImage(named: "imagemCamera" )
@@ -29,6 +29,7 @@ class NovaOcorrenciaView: ViewDefault{
     var descriçãoTextField = TextFieldDefault (placeholder: "Descrição", keyBoardType: .default, returnKeyType: .next)
     var localizaçãoSenhaTextField =  TextFieldDefault (placeholder: "Localização", keyBoardType: .default, returnKeyType: .next)
     var statusTextField = TextFieldDefault (placeholder: "Status", keyBoardType: .default, returnKeyType: .done)
+    
     var buttonSalvar = ButtonDefault(botao: "SALVAR")
     
     
@@ -91,6 +92,14 @@ class NovaOcorrenciaView: ViewDefault{
     
     func setImage (image:UIImage){
         imagem.image = image 
+    }
+    
+    @objc
+        private func statusTap () {
+            self.onStatusTap?()
+        }
+    func setList (image:UIImage){
+        imagem.image = image
     }
  }
 

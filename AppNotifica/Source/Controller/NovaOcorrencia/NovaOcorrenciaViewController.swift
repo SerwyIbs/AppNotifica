@@ -14,7 +14,9 @@ class NovaOcorrenciaViewController : ViewControllerDefault {
         novaOcorrenciaView.onCameraTap = {
             EscolherImagem().selecionadorImagem(self){ imagem in novaOcorrenciaView.setImage(image:imagem)}
         }
-        
+        novaOcorrenciaView.onStatusTap = {
+            EscolherStatus()
+        }
         
         return novaOcorrenciaView
     } ()
