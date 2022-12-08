@@ -12,7 +12,7 @@ class SobreView: ViewDefault{
     var imageLogin = ImageDefault(image: "ImageLogin")
     var imageLabel0 = LabelDefault(text: "Aplicativo desenvolvido pelos professores do curso Desenvolvimento de aplicativos utilizando a linguagem Swift do IFB com intuito de permitir que ocorrências sejam registradas e acompanhadas, bem como solucionadas.", font: UIFont.systemFont(ofSize: 15, weight: .regular))
     
-    var imageLabel2 = LabelDefault(text: "Desenvolvedores:", font: UIFont.systemFont(ofSize: 15, weight: .regular))
+    var imageLabel2 = LabelDefault(text: "Desenvolvedores:", font: UIFont.systemFont(ofSize: 15, weight: .black))
     
     var imageLabel3 = LabelDefault(text: "Caio Moura Daoud\nDiógenes Ferreira Reis Fustinoni\nFábio Ferraz Fernandez\nHeitor José dos Santos Barros\nJosé Dario Pintor da Silva\nTiago Henrique Faccio Segato", font: UIFont.systemFont(ofSize: 15, weight: .regular))
     

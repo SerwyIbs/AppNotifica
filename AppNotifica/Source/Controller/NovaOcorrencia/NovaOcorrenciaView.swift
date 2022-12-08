@@ -29,6 +29,12 @@ class NovaOcorrenciaView: ViewDefault{
     var descriçãoTextField = TextFieldDefault (placeholder: "Descrição", keyBoardType: .default, returnKeyType: .next)
     var localizaçãoSenhaTextField =  TextFieldDefault (placeholder: "Localização", keyBoardType: .default, returnKeyType: .next)
     var statusTextField = TextFieldDefault (placeholder: "Status", keyBoardType: .default, returnKeyType: .done)
+    
+    
+    
+    
+    
+    
     var buttonSalvar = ButtonDefault(botao: "SALVAR")
     
     
